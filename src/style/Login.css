@@ -1,0 +1,14 @@
+.section-head{
+    display: flex;
+    flex-direction: row;
+}
+.left-photo{
+    background: url('../asset/left-photo.PNG');
+    height: 100vh;
+    width: 50%;
+    background-size: cover;
+}
+.right-login-form{
+    margin: auto 0px;
+    width: 50%;
+}
