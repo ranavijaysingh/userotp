@@ -11,4 +11,32 @@
 .right-login-form{
     margin: auto 0px;
     width: 50%;
+    margin-top: 5%;
+    /* padding-top: 5%; */
+}
+
+footer{
+    /* padding-top: 23%; */
+    font-size: x-small;
+    margin-left: 23%;
+    margin-right: 23%;
+    margin-top: 5%;
+}
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+
+form{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+}
+
+botton{
+
 }

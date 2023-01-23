@@ -1,36 +1,71 @@
-import React from 'react'
-import '../style/Login.css';
-import leftphoto from '../asset/left-photo.PNG';
-import logochess from '../asset/logo-chess.PNG';
+import React from "react";
+import "../style/Login.css";
+import { Button, Badge } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import logochess from "../asset/logo-chess.PNG";
 const Login = () => {
   return (
     <div>
-      <div className='section-head'>
+      <div className="section-head">
         {/* Constant Photo Section */}
-        <div className='left-photo'>
-        {/* <img src={leftphoto} alt='left side background'/> */}
+        <div className="left-photo">
+          {/* <img src={leftphoto} alt='left side background'/> */}
         </div>
         {/* Login form section */}
-        <div className='right-login-form'>
+        <div className="right-login-form">
           <center>
-            <img src={logochess} alt='chessLogo' />
-            <h4>Login</h4>
-            <h5>Continue with your mobile no.</h5>
+            <img src={logochess} alt="chessLogo" />
+            <h4> Login </h4> <h5> Continue with your mobile no. </h5>
             <form>
-              <input name='mobileNo' placeholder='Mobile No.'/>
-              <button type='submit'> Get Started</button>
+              <div className="form-outline mb-4">
+                <input
+                  type="email"
+                  id="form1Example13"
+                  className="form-control form-control-lg"
+                />
+                <label className="form-label" htmlFor="form1Example13" placeholder="Mobile Number">
+                </label>
+              </div>
+              <button
+                type="submit"
+                className="btn btn-primary btn-lg btn-block"
+              >
+                Get Started
+              </button>
+              <div className="divider d-flex align-items-center my-4">
+                <p className="text-center fw-bold mx-3 mb-0 text-muted"> OR </p>
+              </div>
+              <a
+                className="btn btn-primary btn-lg btn-block"
+                style={{
+                  backgroundColor: "#3b5998",
+                }}
+                href="#!"
+                role="button"
+              >
+                <i className="fab fa-facebook-f me-2" /> Continue with Email
+              </a>
+              <a
+                className="btn btn-primary btn-lg btn-block"
+                style={{
+                  backgroundColor: "#55acee",
+                }}
+                href="#!"
+                role="button"
+              >
+                <i className="fab fa-twitter me-2" /> Continue with Google
+              </a>
             </form>
-            <div>------or------</div>
-            <button> Continue with Email</button>
-            <button>Continue with Google</button>
-            <foorter>
-              By Clicking 'Continue with Google/Email' above, you acknowledge that you have read and understood and agree to Pensil's Terms & Conditions and Privacy Policy
-            </foorter>
-          </center>
-        </div>
-      </div>
+            <footer>
+              By Clicking 'Continue with Google/Email' above, you acknowledge
+              that you have read and understood and agree to Pensil 's Terms &
+              Conditions and Privacy Policy{" "}
+            </footer>{" "}
+          </center>{" "}
+        </div>{" "}
+      </div>{" "}
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
