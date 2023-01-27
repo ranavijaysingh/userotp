@@ -7,14 +7,11 @@ import users from "../local-json/users.json";
 import '../style/sign.css';
 import Verify  from './Verify';
 import  Login  from './Login.js';
+import { Link } from 'react-router-dom';
 const Sign = ({userData}) => {
 
-  const handleClick = () =>{
-
-  }
   return (
     <div>
-     
       <div className="section-head">
         {/* Constant Photo Section */}
         <div className="left-photo">
@@ -30,7 +27,8 @@ const Sign = ({userData}) => {
             <p><b>{userData.email}</b></p>
             <h6>Switch account</h6>
             <button>Cancel</button>
-            <button onClick= {() => handleClick()}>Send OTP</button>
+            
+            <Link to='/verify'><button>Send OTP</button></Link>
           </center>{" "}
         </div>{" "}
       </div>{" "}

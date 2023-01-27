@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import logochess from "../asset/logo-chess.PNG";
 import users from "../local-json/users.json";
 import Sign from "./Sign";
-const Login = () => {
+const Login = ({setGetUserData}) => {
 
   const [mobile, setMobile] = useState("")
   const [active, setActive] = useState("login");
@@ -16,6 +16,7 @@ const Login = () => {
         {
           setActive("sign");
           setUserData(user);
+          setGetUserData(user);
         }
     })
     
