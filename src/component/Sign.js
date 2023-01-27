@@ -20,18 +20,21 @@ const Sign = ({userData}) => {
         {/* Login form section */}
         <div className="right-login-form">
           <center>
-            <p><b>Looks like your account already exist</b></p>
-            <p><b>using this email id</b></p>
-            <img src={userData.img} alt="Display Avatar Image" />
-            <h5><b>{userData.name}</b></h5>
-            <p><b>{userData.email}</b></p>
-            <h6>Switch account</h6>
-            <button>Cancel</button>
-            
-            <Link to='/verify'><button>Send OTP</button></Link>
-          </center>{" "}
-        </div>{" "}
-      </div>{" "}
+            <div className="cardCenter">
+              <p className="existPara"><b>Looks like your account already exist</b></p>
+              <p><b>using this email id</b></p>
+              <img src={userData.img} alt="Display Avatar Image" />
+              <h5><b>{userData.name}</b></h5>
+              <p>{userData.email}</p>
+              <h6>Switch account</h6>
+              <div className="btns">
+                <button className="cancelBtn">Cancel</button>
+                <Link to='/verify'><button className="otpBtn">Send OTP</button></Link>
+              </div>
+            </div>
+          </center>
+        </div>
+      </div>
     </div>
   );
 };

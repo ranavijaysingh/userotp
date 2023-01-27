@@ -37,6 +37,25 @@ form{
     margin-top: 5%;
 }
 
-botton{
-
+.startBtn{
+    background:rgba(85,56,232,255);
+    border: 0px;
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    padding: 5px;
+}
+.emailGoogleBtn{
+    background:#ffff;
+    color:black;
+    border: 1px solid #ced4da;
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.emailGoogleBtn svg{
+    margin-bottom: 6px;
+}
+.googleBtn svg{
+    color: #dc3545;
 }

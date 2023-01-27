@@ -1,4 +1,45 @@
 img {
     border-radius: 50%;
-    height: 100px;
+    height: 6rem;
+    margin-top: 1.3rem;
   }
+.right-login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    color: rgb(108,108,108,255);
+  }
+.cardCenter{
+  border: 2px solid rgb(240,240,240,250);
+  padding: 40px 60px;
+  border-radius: 20px;
+
+}
+p{
+    margin-bottom: 0rem;
+}
+h5{
+  margin-bottom: 0rem;
+}
+h6{
+  color: rgba(85,56,232,255);
+  margin-bottom: 3rem;
+}
+.btns{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.cancelBtn, .otpBtn{
+  background: white;
+  border: 1px solid rgba(85,56,232,255);
+  border-radius: 5px;
+  color: rgba(85,56,232,255);
+  padding: 5px 40px;
+}
+.otpBtn{
+  background: rgba(85,56,232,255);
+  color: white;
+  padding: 5px 30px;
+}

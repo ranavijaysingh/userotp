@@ -7,6 +7,10 @@
   height: 40vmin;
   pointer-events: none;
 }
+.startBtn{
+  background-color: rgba(85,56,232,255)!important;
+  color: white!important;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
