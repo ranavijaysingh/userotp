@@ -1,0 +1,38 @@
+img {
+    border-radius: 50%;
+    height: 6rem;
+    margin-top: 1.3rem;
+  }
+.paraInput{
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    margin: 1rem 0 2rem 0;
+    justify-content: space-between;
+    padding: 8px 10px;
+}
+.paraInput .sp2{
+    color: rgba(81,195,105,255);
+}
+.leftContent {
+    text-align: initial;
+}
+.otpForm{
+    display: flex;
+    margin: 16px 0px;
+    flex-direction: column;
+}
+.otpForm input{
+    margin: 6px 0 1rem 0;
+    border-radius: 5px;
+    padding: 8px 10px;
+    border: 1px solid grey;
+}
+.otpForm button{
+    background: rgba(85,56,232,255);
+    border: 0px;
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+}

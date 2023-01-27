@@ -1,5 +1,4 @@
 import React from "react";
-import "../style/Login.css";
 import { Button, Badge } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import imgAvatar from "../asset/img_avatar.png";
