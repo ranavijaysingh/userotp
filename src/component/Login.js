@@ -1,27 +1,42 @@
-import React from "react";
+import React, {useState} from "react";
 import "../style/Login.css";
 import { Button, Badge } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logochess from "../asset/logo-chess.PNG";
+import users from "../local-json/users.json";
+import Sign from "./Sign";
 const Login = () => {
+
+  const [mobile, setMobile] = useState("")
+  const [active, setActive] = useState("login");
+  const [userData, setUserData] = useState();
+  const handleSubmit = () =>{
+    users.map((user) =>{
+      if(user.number == mobile)
+        {
+          setActive("sign");
+          setUserData(user);
+        }
+    })
+    
+  }
+
   return (
     <div>
-      <div className="section-head">
-        {/* Constant Photo Section */}
+      {active=="login" && <div className="section-head">
         <div className="left-photo">
-          {/* <img src={leftphoto} alt='left side background'/> */}
         </div>
-        {/* Login form section */}
         <div className="right-login-form">
           <center>
             <img src={logochess} alt="chessLogo" />
             <h4> Login </h4> <h5> Continue with your mobile no. </h5>
-            <form>
+            <form  onSubmit={e => e.preventDefault()}>
               <div className="form-outline mb-4">
                 <input
-                  type="email"
                   id="form1Example13"
                   className="form-control form-control-lg"
+                  value={mobile}
+                  onChange = { (e) => setMobile(e.target.value)}
                 />
                 <label className="form-label" htmlFor="form1Example13" placeholder="Mobile Number">
                 </label>
@@ -29,6 +44,7 @@ const Login = () => {
               <button
                 type="submit"
                 className="btn btn-primary btn-lg btn-block"
+                onClick={() => handleSubmit()}
               >
                 Get Started
               </button>
@@ -63,7 +79,8 @@ const Login = () => {
             </footer>{" "}
           </center>{" "}
         </div>{" "}
-      </div>{" "}
+      </div>}
+      {active=="sign" && <Sign userData={userData}/>}
     </div>
   );
 };
